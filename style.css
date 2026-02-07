@@ -399,14 +399,17 @@ main section > *,
     font-size: 1.05rem;
 }
 
-.package-pill {
-    background: linear-gradient(to bottom, var(--stormy-2), var(--stormy-1));
+   .package-pill {
+    background: linear-gradient(to bottom, #dceaf7, #bdddfc);
     color: var(--stormy-4);
     padding: 22px 24px;
     margin-bottom: 22px;
     border-radius: 18px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     text-align: left;
+}
+
 }
 
 .package-pill h3 {
