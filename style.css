@@ -383,6 +383,64 @@ main section > *,
 .pill-tc:hover {
     background-color: #c9442b;
 }
+/* ===========================================================
+   SCHOOL WELLBEING PACKAGES
+=========================================================== */
+
+.school-packages {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.packages-intro {
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+}
+
+.package-pill {
+    background: linear-gradient(to bottom, var(--stormy-2), var(--stormy-1));
+    color: var(--stormy-4);
+    padding: 22px 24px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    text-align: left;
+}
+
+.package-pill h3 {
+    margin-top: 0;
+    color: var(--marian-blue);
+}
+
+.package-pill ul {
+    padding-left: 18px;
+    margin: 12px 0;
+}
+
+.package-pill li {
+    margin-bottom: 6px;
+}
+
+.package-pill strong {
+    color: var(--accent-blue);
+    font-size: 1.1rem;
+}
+
+.small-note {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .package-pill {
+        padding: 18px;
+    }
+}
+
 
 /* ===========================================================
    RESPONSIVE — MOBILE FIXES
