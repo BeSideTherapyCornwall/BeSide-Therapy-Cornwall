@@ -217,40 +217,6 @@ a:hover {
 /* ===========================================================
    UNIVERSAL CONTENT SECTIONS
 =========================================================== */
-main section,
-.content,
-.walking-therapy,
-.play-therapy-schools,
-.fees-content,
-.faq-content {
-    position: relative;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 25px;
-
-    background-image: url('blue bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    border-radius: 14px;
-    box-shadow: 0 0 14px rgba(0,0,0,0.15);
-}
-
-main section::before,
-.content::before,
-.walking-therapy::before,
-.play-therapy-schools::before,
-.fees-content::before,
-.faq-content::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.35);
-    border-radius: inherit;
-    z-index: 0;
-}
-
 main section > *,
 .content > *,
 .walking-therapy > *,
@@ -260,6 +226,7 @@ main section > *,
     position: relative;
     z-index: 1;
 }
+
 /* CSS: add to style.css */
 .text-box {
   background: #ffffff;
@@ -271,6 +238,7 @@ main section > *,
   line-height: 1.6;
   color: #222;
   max-width: 900px;
+  width: 100%; /* added so it behaves like your other content boxes */
 }
 
 /* ===========================================================
@@ -395,6 +363,7 @@ main section > *,
 .pill-tc:hover {
     background-color: #c9442b;
 }
+
 /* ===========================================================
    SCHOOL WELLBEING PACKAGES
 =========================================================== */
@@ -411,7 +380,7 @@ main section > *,
     font-size: 1.05rem;
 }
 
-   .package-pill {
+.package-pill {
     background: linear-gradient(to bottom, #dceaf7, #bdddfc);
     color: var(--stormy-4);
     padding: 22px 24px;
@@ -422,7 +391,7 @@ main section > *,
     text-align: left;
 }
 
-}
+/* ❗ FIXED: removed stray “}” that broke your CSS */
 
 .package-pill h3 {
     margin-top: 0;
@@ -455,7 +424,6 @@ main section > *,
         padding: 18px;
     }
 }
-
 
 /* ===========================================================
    RESPONSIVE — MOBILE FIXES
