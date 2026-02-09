@@ -36,7 +36,7 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    opacity: 0.24;
+    opacity: 0.10;
     pointer-events: none;
     z-index: -2;
     background-image:
@@ -530,4 +530,16 @@ main section > *,
         font-size: 0.85rem;
         padding: 12px;
     }
+}@media (max-width: 900px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar li {
+        flex: 1 1 auto;
+        text-align: center;
+    }
 }
+
