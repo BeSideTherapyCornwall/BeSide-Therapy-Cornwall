@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://besidetherapycornwall.github.io/BeSide-Therapy-Cornwall/sitemap.txt
+Sitemap: https://besidetherapycornwall.co.uk/sitemap.xml
