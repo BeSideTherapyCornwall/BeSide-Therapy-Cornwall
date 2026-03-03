@@ -337,15 +337,13 @@ main section > *,
 }
 
 /* ===========================================================
-   FOOTER (YOUR ORIGINAL — UNCHANGED)
+   FOOTER
 =========================================================== */
 .site-footer {
     margin-top: 40px;
     padding: 15px 20px;
-
     background: linear-gradient(to bottom, #BDDDFC, #6A89A7);
     border-top: 6px solid var(--accent-blue);
-
     color: white;
     text-align: center;
     font-size: 0.9rem;
@@ -356,14 +354,6 @@ main section > *,
     color: #ffffff;
     font-weight: 600;
 }
-
-.footer-content,
-.footer-bottom {
-    margin: 0;
-    padding: 0;
-}
-
-/* ---------- ONLY ADDITIONS (safe footer tidy) ---------- */
 
 .footer-section {
     margin-bottom: 18px;
@@ -401,7 +391,6 @@ main section > *,
 /* ===========================================================
    SCHOOL WELLBEING PACKAGES
 =========================================================== */
-
 .school-packages {
     max-width: 900px;
     margin: 40px auto;
@@ -424,8 +413,6 @@ main section > *,
     box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     text-align: left;
 }
-
-/* FIXED: removed stray bracket */
 
 .package-pill h3 {
     margin-top: 0;
@@ -463,7 +450,6 @@ main section > *,
    RESPONSIVE — MOBILE FIXES
 =========================================================== */
 @media (max-width: 768px) {
-
     .navbar {
         flex-direction: column;
         height: auto;
@@ -530,7 +516,9 @@ main section > *,
         font-size: 0.85rem;
         padding: 12px;
     }
-}@media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
     .navbar ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -543,3 +531,23 @@ main section > *,
     }
 }
 
+/* ===========================================================
+   NEW — RESOURCE SECTIONS (SAFE ADDITIONS)
+=========================================================== */
+
+/* Soft framed box for flyers (optional but recommended) */
+.resource-box {
+    background: rgba(255,255,255,0.55);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* Neat layout for View / Download buttons */
+.resource-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
